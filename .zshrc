@@ -60,8 +60,9 @@ alias ..="cd .."
 # cd codes
 alias codes="cd ~/Documents/school/codes"
 
-# copy temp.cpp to new file
+# competitive programming
 alias temp="cp ~/Documents/school/codes/temp.cpp"
+alias makecp="g++ -fsanitize=address,undefined -fno-omit-frame-pointer -g -Wall -Wshadow -std=c++20 -Wno-unused-result -Wno-sign-compare -Wno-char-subscripts -o main"
 
 # cd prog_subjects
 alias prog="cd ~/Documents/school/ufmg/programmingSubjects"
@@ -74,9 +75,6 @@ alias gh="history|grep"
 
 # mkdir with more than one directory
 alias mkdir="mkdir -pv"
-
-# neofetch
-alias nf="neofetch"
 
 # moar
 alias more="moar"
