@@ -1,0 +1,27 @@
+[colors.primary]
+background = '#000000'
+foreground = {foreground}
+
+[colors.cursor]
+text = '#000000'
+cursor = {cursor}
+
+[colors.normal]
+black   = {background}
+red     = {color1}
+green   = {color3}
+yellow  = {color4}
+blue    = {color5}
+magenta = {color6}
+cyan    = {color7}
+white   = {color8}
+
+[colors.bright]
+black   = {background}
+red     = {color1}
+green   = {color3}
+yellow  = {color4}
+blue    = {color5}
+magenta = {color6}
+cyan    = {color7}
+white   = {color8}

@@ -1,0 +1,93 @@
+{
+  // Modules configuration
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "format": "{icon}",
+    "format-icons": {
+      "1": "一",
+      "2": "二",
+      "3": "三",
+      "4": "四",
+      "5": "五",
+      "6": "六",
+      "7": "七",
+      "8": "八",
+      "9": "九",
+      "10": "十"
+    },
+    "on-click": "activate"
+  },
+  "tray": {
+    "icon-size": 16,
+    "spacing": 8
+  },
+  "hyprland/window": {
+    "max-length": 48
+  },
+  "custom/powermenu": {
+    "format": "",
+    "on-click": "~/.config/hypr/scripts/powermenu.sh",
+    "tooltip": false
+  },
+  "cpu": {
+    "format": "  {usage}%",
+    "interval": 2
+  },
+  "memory": {
+    "format": "󰄦 {used}GiB",
+    "interval": 2
+  },
+  "backlight": {
+  	"format": "{icon} {percent}%",
+    "format-charging": " {capacity}%",
+    "format-icons": ["󰃞", "󰃟", "󰃠"],	
+  },
+  "pulseaudio": {
+    "scroll-step": 5, // %, can be a float
+    "format": "{icon} {volume}%",
+    "format-muted": "󰖁 Muted",
+    "format-icons": ["", "", ""],
+    "on-click": "pavucontrol"
+  },
+  "battery": {
+  	"bat": "BAT0",
+  	"interval": 60,
+  	"states": {
+  		"warning": 30,
+  		"critical": 15
+  	},
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "󰂄 {capacity}%",
+    "format-alt": "{time} {icon}",
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+  },
+  "network": {
+  	"interface": "wlan0",
+  	"format": "{ifname}",
+  	"format-wifi": "  {essid}",
+  	"format-ethernet": "{ifname} ",
+  	"format-disconnected": "", //An empty format will hide the module.
+  	"format-disconnected": "",
+  	"tooltip-format": "{ifname}",
+  	"tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+  	"tooltip-format-ethernet": "{ifname} ",
+  	"tooltip-format-disconnected": "Disconnected",
+  	"max-length": 50
+  },
+  "custom/kernel": {
+    "exec": "uname -r | cut -d '-' -f1",
+    "interval": "once",
+    "format": "<span color=\"#7aa2f7\"> </span>{}"
+  },
+  "clock": {
+      "interval": 60,
+      "format": "󰃰 {:%A, %B %d | %I:%M %p}",
+      "tooltip-format": "<tt><big>{calendar}</big></tt>",
+  },
+  "hyprland/submap": {
+      "format": "✌️ {}",
+      "max-length": 8,
+      "tooltip": false
+  },
+}

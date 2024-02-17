@@ -1,0 +1,66 @@
+ @import '../../.cache/wal/colors-waybar.css';
+
+* {
+  font-family: Fira Code Nerd Font;
+  font-weight: bold;
+  font-size: 16px;
+  color: @foreground;
+  min-height: 10px;
+}
+
+/* Set background color of main waybar window */
+window#waybar {
+  background: @background;
+}
+
+/* Set background color of tooltips */
+tooltip {
+  background: @background;
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: @color1;
+}
+
+/* Set workspace text color and padding */
+#workspaces button {
+  padding: 4px;
+}
+
+/* Sets active workspace to have a solid line on the bottom */
+#workspaces button.active {
+  border-bottom: 2px solid @color1;
+}
+
+/* More workspace stuff for highlighting on hover */
+#workspaces button.focused {
+  color: @color1;
+}
+
+#workspaces button.urgent {
+  color: @color2;
+}
+
+/* Sets background, padding, margins, and borders for (all) modules */
+#custom-powermenu,
+#custom-updates,
+#workspaces,
+#network,
+#clock,
+#window,
+#cpu,
+#memory,
+#backlight,
+#pulseaudio,
+#tray,
+#battery,
+#disk
+{
+  background: @background;
+  margin: 0px 8px 0px 8px;
+}
+
+#window.empty {
+  background: @background;
+}
+
